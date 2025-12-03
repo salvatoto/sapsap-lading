@@ -91,8 +91,8 @@ const Footer = () => {
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© 2025 <Logo className="inline-block mx-1" width={60} height={20} />. {t('footer.rights')}</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">{t('footer.privacy')}</a>
-            <a href="#" className="hover:text-foreground transition-colors">{t('footer.terms')}</a>
+            <Link to="/privacy" className="hover:text-foreground transition-colors">{t('footer.privacy')}</Link>
+            <Link to="/terms" className="hover:text-foreground transition-colors">{t('footer.terms')}</Link>
             <a href="#" className="hover:text-foreground transition-colors">{t('footer.cookies')}</a>
           </div>
         </div>
